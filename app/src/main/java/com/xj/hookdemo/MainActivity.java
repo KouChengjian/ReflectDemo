@@ -26,6 +26,7 @@ import com.android.mylibrary.LogUitl;
 import com.xj.hookdemo.activityhook.TestClipboardActivity;
 import com.xj.hookdemo.activityhook.TestHookStartActivity;
 import com.xj.hookdemo.hook.notification.NotificationHookHelper;
+import com.xj.hookdemo.utils.HookViewClickUtil;
 
 import java.io.File;
 import java.lang.reflect.Field;
@@ -50,6 +51,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iv_loader_skin = findViewById(R.id.iv_loader_skin);
+
+        iv_loader_skin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e("MainActivity","iv_loader_skin 被点击了");
+            }
+        });
+
+        HookViewClickUtil.hookView(iv_loader_skin);
+
     }
 
     public void onButtonClick(View view) {
