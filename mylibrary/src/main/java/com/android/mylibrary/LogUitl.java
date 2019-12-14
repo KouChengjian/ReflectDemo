@@ -9,7 +9,9 @@ import android.util.Log;
  * Description:
  */
 public class LogUitl {
+
     public static final String TAG="LogUitl";
+
     private void  printLog(){
         Log.e(TAG,"这是来自另外一个dex中的log");
     }

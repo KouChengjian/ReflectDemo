@@ -91,6 +91,9 @@ public class MainActivity extends AppCompatActivity {
                     loaderApkToSkin();
                 }
                 break;
+            case R.id.btn_7:
+
+                break;
         }
     }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.xj.hookdemo"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xj.hookdemo">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -13,31 +13,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".activityhook.TestClickActivity"
+            android:label="@string/title_activity_test_click"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TestOnClickActivity">
-        </activity>
-        <activity android:name=".activityhook.TestHookStartActivity">
-        </activity>
-        <activity android:name=".TestNotificationActivity">
-        </activity>
-        <activity android:name=".activityhook.TestActivityStart">
-        </activity>
-        <activity android:name=".activityhook.TestApplicationStart">
-        </activity>
-        <activity android:name=".activityhook.TestIActivityManagerStart">
-        </activity>
-        <activity android:name=".activityhook.TestClipboardActivity">
-        </activity>
-        <activity android:name=".activityhook.EmptyActivity">
-        </activity>
-        <activity android:name=".activityhook.TestStartActivityNoRegister">
-        </activity>
+        <activity android:name=".TestOnClickActivity"></activity>
+        <activity android:name=".activityhook.TestHookStartActivity"></activity>
+        <activity android:name=".TestNotificationActivity"></activity>
+        <activity android:name=".activityhook.TestActivityStart"></activity>
+        <activity android:name=".activityhook.TestApplicationStart"></activity>
+        <activity android:name=".activityhook.TestIActivityManagerStart"></activity>
+        <activity android:name=".activityhook.TestClipboardActivity"></activity>
+        <activity android:name=".activityhook.EmptyActivity"></activity>
+        <activity android:name=".activityhook.TestStartActivityNoRegister"></activity>
     </application>
 
 </manifest>

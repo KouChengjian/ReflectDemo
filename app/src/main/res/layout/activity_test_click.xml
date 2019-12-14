@@ -1,0 +1,21 @@
+<com.xj.hookdemo.view.Layout1 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/v1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <com.xj.hookdemo.view.Layout2
+        android:id="@+id/v2"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark">
+
+        <com.xj.hookdemo.view.Layout3
+            android:id="@+id/v3"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="#F00000" />
+    </com.xj.hookdemo.view.Layout2>
+</com.xj.hookdemo.view.Layout1>
