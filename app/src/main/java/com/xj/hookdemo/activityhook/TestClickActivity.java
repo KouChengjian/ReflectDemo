@@ -2,18 +2,20 @@ package com.xj.hookdemo.activityhook;
 
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
 import com.xj.hookdemo.R;
 
+/**
+ * Created with Android Studio.
+ * User: kcj
+ * Date: 2018/8/24 10:00
+ * Description: Activity VuewGroup View
+ */
 public class TestClickActivity extends AppCompatActivity {
 
     @Override
@@ -42,7 +44,7 @@ public class TestClickActivity extends AppCompatActivity {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.e("msg", "EventActivity-dispatch");
+        Log.e("msg", "EventActivity-dispatch = " + ev.getAction());
         return super.dispatchTouchEvent(ev);
     }
 

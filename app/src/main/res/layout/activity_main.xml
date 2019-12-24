@@ -46,6 +46,10 @@
         android:text="apk loader skin"
         android:textAllCaps="false"/>
 
+    <ImageView
+        android:id="@+id/iv_loader_skin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
     <Button
         android:id="@+id/btn_7"
         android:layout_width="match_parent"
@@ -53,9 +57,4 @@
         android:onClick="onButtonClick"
         android:text="on click touch"
         android:textAllCaps="false"/>
-
-    <ImageView
-        android:id="@+id/iv_loader_skin"
-        android:layout_width="100dp"
-        android:layout_height="100dp"/>
 </LinearLayout>

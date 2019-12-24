@@ -23,6 +23,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.android.mylibrary.LogUitl;
+import com.xj.hookdemo.activityhook.TestClickActivity;
 import com.xj.hookdemo.activityhook.TestClipboardActivity;
 import com.xj.hookdemo.activityhook.TestHookStartActivity;
 import com.xj.hookdemo.hook.notification.NotificationHookHelper;
@@ -92,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.btn_7:
-
+                jump(this, TestClickActivity.class);
                 break;
         }
     }

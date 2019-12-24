@@ -13,10 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
         <activity
-            android:name=".activityhook.TestClickActivity"
-            android:label="@string/title_activity_test_click"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".activityhook.TestClickActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
